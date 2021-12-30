@@ -1,4 +1,24 @@
+:root {
+    --white-color : #fff;
+    --text-color : #9A9A9A;
+    --black-color :#000;
+    --blu-color: #14b9d5;
+    --555-color : #555;
+}
+
+*{
+    /* kế thừa từ thẻ chứa nó */
+    box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
+}
+
 html {
+    /* 1rem = 10px*/
+    font-size: 62.5%;
+     /* chiều cao dòng */
+    line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
+    box-sizing: border-box;
 }
