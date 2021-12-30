@@ -22,3 +22,47 @@ html {
     /* font-family: 'Open Sans', sans-serif; */
     box-sizing: border-box;
 }
+
+/* --------------con navbar----------- */
+.header__subnav-list {
+    position: absolute;
+    z-index: 1;
+    top: 43px;  
+    background-color: var(--white-color);
+    min-width: 192px;
+    box-shadow: 0 0 6px rgb(255 255 255 / 80%);
+}
+
+.header__subnav-item {
+    list-style: none;
+    height: 48px;
+    letter-spacing: 2px;
+    border-top: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.header__subnav-item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.header__subnav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 15px 25px;  
+    color: var(--text-color);  
+    line-height: 48px;
+}
+
+.header__subnav-item-icon {
+    color: var(--text-color);
+}
+
+.header__subnav-item-text {
+    background-color: #f76570;
+    color: var(--white-color);
+    padding: 2px 4px;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 10px;
+}
