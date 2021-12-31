@@ -31,7 +31,7 @@ html {
     background-color: var(--white-color);
     min-width: 192px;
     box-shadow: 0 0 6px rgb(255 255 255 / 80%);
-    /* display: none; */
+    display: none;
 }
 
 .header-navbar__list-item:hover .header__subnav-list {
@@ -83,14 +83,61 @@ html {
 
 /* sub-2 */
 .header__subnav-sub-2-list {
+    top: calc(100% - 48px);
+    left: 218px;
+    display: none;
     position: absolute;
-    top: 0;
+    z-index: 1;
+    background-color: var(--white-color);
+    min-width: 192px;
+    box-shadow: 0 0 6px rgb(255 255 255 / 80%);
 }   
 
-.header__subnav-item-sub-2 {
-
+.header__subnav-sub-2--tour::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    top: calc(100% - 192px);
+    left: -27px;
+    height: 48px;
+    display: block;
 }
 
-.header__subnav-item-sub-2-link {
 
+.header__subnav-item-sub-2--about::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    top: calc(100% - 48px);
+    left: -27px;
+    height: 48px;
+    display: block;
+}
+
+.header__subnav-item-sub-2--contact::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    top: calc(100% - 96px);
+    left: -27px;
+    height: 48px;
+    display: block;
+}
+
+.header__subnav-item-sub-2--post::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    top: calc(100% - 144px);
+    left: -27px;
+    height: 48px;
+    display: block;
+}
+
+.header__subnav-item:hover .header__subnav-sub-2-list {
+    display: block;
+}
+
+.header__subnav-item-text--blu-color {
+    background-color: var(--blu-color);
 }
